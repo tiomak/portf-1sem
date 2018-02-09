@@ -1,0 +1,304 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    /*    margin: 40px;*/
+    font-family: 'Open Sans', 'sans-serif';
+    background-color: #332333;
+    color: #C0C0C0;
+}
+
+h1,
+h3,
+h4,
+p {
+    margin: 0 0 1em 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+}
+
+h2 {
+    margin: 1em 0;
+    text-transform: uppercase;
+}
+
+.link-spanner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.wrapper {
+    max-width: 1024px;
+    margin: 0 20px;
+    display: grid;
+    grid-gap: 10px;
+}
+
+/* no grid support? */
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
+}
+
+#wrapper-1clm {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: auto;
+    grid-auto-rows: minmax(150px, auto);
+}
+
+.panel {
+    /* needed for the flex layout*/
+    margin-left: 5px;
+    margin-right: 5px;
+    flex: 1 1 200px;
+    position: relative;
+}
+
+#one {
+    background-color: #4C4502;
+}
+
+#two {
+    background-color: #BE5E04;
+}
+
+#tre {
+    background-color: #996600;
+}
+
+#four {
+    background-color: #820333;
+}
+
+/*nav menu*/
+
+.nav-container > li {
+    padding: 10px;
+    text-align: center;
+    font-size: 1em;
+    color: #C0C0C0;
+    border: 1px solid #C0C0C0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+.nav-container > li:nth-child(1) {
+    background-color: #4C4502;
+}
+
+.nav-container > li:nth-child(2) {
+    background-color: #BE5E04;
+}
+
+.nav-container > li:nth-child(3) {
+    background-color: #996600;
+}
+
+.nav-container > li:nth-child(4) {
+    background-color: #820333;
+}
+
+.nav-container > li:nth-child(5) {
+    background-color: #583c58;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container .box {
+    flex: 1
+}
+
+/*anchor links*/
+
+a:link {
+    color: #C0C0C0;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #C0C0C0;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #CDCDCD;
+}
+
+a:active {
+    color: #C0C0C0;
+}
+
+.header,
+.footer {
+    margin-left: 5px;
+    margin-right: 5px;
+    flex: 0 1 100%;
+    grid-column: 1 / -1;
+}
+
+.wrapper > * {
+    background-color: #332333;
+    color: #C0C0C0;
+    /*silver*/
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    margin-bottom: 10px;
+}
+
+/*tablet*/
+
+@media screen and (min-width: 600px) {
+    .grid {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .cell {
+        width: 50%;
+    }
+}
+
+/*desktop*/
+
+@media screen and (min-width: 1000px) {
+    .cell {
+        width: calc(100% / 4);
+    }
+}
+
+/* flexbox and masonry gallery*/
+
+.masonry {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -8px;
+    /* Adjustment for the gutter */
+}
+
+.masonry-brick {
+    flex: auto;
+    height: 250px;
+    min-width: 150px;
+    margin: 0 8px 8px 0;
+    /* Some gutter */
+}
+
+.masonry-brick {
+    &:nth-child(4n+1) {
+        width: 250px;
+    }
+    &:nth-child(4n+2) {
+        width: 325px;
+    }
+    &:nth-child(4n+3) {
+        width: 180px;
+    }
+    &:nth-child(4n+4) {
+        width: 380px;
+    }
+}
+
+.masonry-img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.my-gallery figcaption {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    margin-bottom: 1em;
+}
+
+/*helper classes*/
+
+.centered-content {
+    text-align: center;
+}
+
+.margin {
+    margin: 16px!important;
+}
+
+.margin-top {
+    margin-top: 1em;
+}
+
+.circle {
+    border-radius: 10%;
+}
+
+.left {
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+hr {
+    margin: 2em;
+}
+
+
+@media screen and (min-width: 768px) {
+    .masonry-brick:nth-child(4n+1) {
+        width: 200px;
+    }
+}
+
+
+/* We need to set the margin used on flex items to 0 as we have gaps in grid.  */
+
+@supports (display: grid) {
+    .wrapper > * {
+        margin: 0;
+    }
+}
+
+/*youtube responsive video*/
+
+.hs-responsive-embed-youtube {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 25px;
+    margin-bottom: 3em;
+}
+
+.hs-responsive-embed-youtube iframe {
+    position: absolute;
+    width: 100%!important;
+    height: 100%!important;
+}
+
+.hs-responsive-embed-computer {
+    position: relative;
+    padding-bottom: 50px;
+    padding-top: 25px;
+}

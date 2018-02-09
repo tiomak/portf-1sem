@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - HTML</title>
+    <link rel="stylesheet" href="../css/grid.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet">
+    <!-- psw CSS file -->
+    <link rel="stylesheet" href="../js/pswp/photoswipe.css">
+    <!-- psw Skin (styling of UI - buttons, caption, preloader, etc.) -->
+    <link rel="stylesheet" href="../js/pswp/default-skin/default-skin.css">
+</head>
+
+<body>
+    <div id="wrapper-1clm" class="wrapper">
+        <header class="header">
+            <div class="logo">
+                <a href="../portfolio.html">
+                    <h4>diego<strong>vega</strong></h4>
+                </a>
+                <!--<img src="" alt="" width="" height="">--></div>
+            <h1>Portfolio</h1>
+
+            <nav>
+                <ul class="nav-container">
+                    <li class="box"><a href="../html/grnd-html.html">HTML</a></li>
+                    <li class="box"><a href="../html/animation.html">ANIM</a></li>
+                    <li class="box"><a href="#">VIDEO</a></li>
+                    <li class="box"><a href="../html/ux.html">UX</a></li>
+                    <li class="box"><a href="../html/om.html">ABOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="#">
+            <h1>VIDEO</h1>
+            <h2>CPH DOX projektet</h2>
+
+            <div class="hs-responsive-embed-youtube">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/zSzjWb4hxdE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+
+            <h4 class="margin-top">Arbejdsprocessen</h4>
+
+            <div class="my-gallery masonry" itemscope itemtype="http://schema.org/ImageGallery">
+                <!--image-->
+                <figure class="masonry-brick" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="../img/video/cphdox/gallery/cphdox-1280x800.jpg" itemprop="contentUrl" data-size="1280x800">
+                          <img src="../img/video/cphdox/thumbs/pitch.jpg" class="masonry-img" itemprop="thumbnail" alt="cphdox pitch" />
+                    </a>
+                    <figcaption itemprop="caption description">cphdox pitch</figcaption>
+                </figure>
+                <!--image-->
+                <figure class="masonry-brick" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="../img/video/cphdox/gallery/insp-899x634.png" itemprop="contentUrl" data-size="899x634">
+                          <img src="../img/video/cphdox/thumbs/insp.jpg" class="masonry-img" itemprop="thumbnail" alt="Inspiration" />
+                    </a>
+                    <figcaption itemprop="caption description">Inspiration</figcaption>
+                </figure>
+                <!--image-->
+                <figure class="masonry-brick" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="../img/video/cphdox/gallery/carlotta-1101x687.png" itemprop="contentUrl" data-size="1101x687">
+                          <img src="../img/video/cphdox/thumbs/carlotta.jpg" class="masonry-img" itemprop="thumbnail" alt="Carlotta Storelli, performance artist" />
+                    </a>
+                    <figcaption itemprop="caption description">Carlotta Storelli, performance artist</figcaption>
+                </figure>
+                <!--image-->
+                <figure class="masonry-brick" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="../img/video/cphdox/gallery/video-prod-1280x800.jpg" itemprop="contentUrl" data-size="1280x800">
+                          <img src="../img/video/cphdox/dslr.jpg" class="masonry-img" itemprop="thumbnail" alt="Basic video production with dslr" />
+                    </a>
+                    <figcaption itemprop="caption description">Basic video production with dslr</figcaption>
+                </figure>
+                <!--image-->
+                <figure class="masonry-brick" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="../img/video/cphdox/gallery/github-1280x800.jpg" itemprop="contentUrl" data-size="1280x800">
+                          <img src="../img/video/cphdox/thumbs/Octocat.jpg" class="masonry-img" itemprop="thumbnail" alt="Github and Git" />
+                    </a>
+                    <figcaption itemprop="caption description">Github and Git</figcaption>
+                </figure>
+                <!--image-->
+                <figure class="masonry-brick" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+                    <a href="../img/video/cphdox/gallery/adobecc-workflow-1280x800.jpg" itemprop="contentUrl" data-size="1280x800">
+                          <img src="../img/video/cphdox/thumbs/prelude.jpg" class="masonry-img" itemprop="thumbnail" alt="Adobe CC workflow" />
+                    </a>
+                    <figcaption itemprop="caption description">Adobe CC workflow</figcaption>
+                </figure>
+
+            </div>
+            <!--my-gallery masonry ends-->
+            <!-- Root element of PhotoSwipe. Must have class pswp. -->
+            <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+                <!-- Background of PhotoSwipe.
+         It's a separate element, as animating opacity is faster than rgba(). -->
+                <div class="pswp__bg"></div>
+
+                <!-- Slides wrapper with overflow:hidden. -->
+                <div class="pswp__scroll-wrap">
+
+                    <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                    <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
+
+                    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                    <div class="pswp__ui pswp__ui--hidden">
+
+                        <div class="pswp__top-bar">
+
+                            <!--  Controls are self-explanatory. Order can be changed. -->
+
+                            <div class="pswp__counter"></div>
+
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                            <!--                            <button class="pswp__button pswp__button--share" title="Share"></button>-->
+
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                            <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                            <!-- element will get class pswp__preloader--active when preloader is running -->
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                    <div class="pswp__preloader__cut">
+                                        <div class="pswp__preloader__donut"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div>
+                        </div>
+
+                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h4 class="margin-top"><a href="http://www.rikkedyreby.dk/kea/03-video/03.02.02_everydayproject/" target="_blank">Link til dokumentationssite >>></a></h4>
+            </div>
+            <hr>
+            <div>
+                <h2>Virksomhedspræsentations: Veneklinik</h2>
+                <h3>Link to kea's youtube channel:</h3>
+                <a href="https://www.youtube.com/embed/1sYsGo27i5U?wmode=transparent&amp;enablejsapi=1">
+                          <img src="../img/video/videoframe.png" alt="Vendeklinik video link visit kort" />
+                    </a>
+                <h4 class="margin-top"><a href="http://anjaholstnielsen.dk/kea/02-admimation/04_04_03_gruppe-3_dokumentationsite/" target="_blank">Link til dokumentationssite >>></a></h4>
+            </div>
+            <hr>
+            <div>
+                <h2>Redesign af website: Veneklinik</h2>
+                <h3>Link to site:</h3>
+                <a href="http://diegovega.dk/kea/03-video/03-redesign/finalsite/prototype-redesign/index.html">
+                          <img src="../img/video/vendeklinik-redesign.png"alt="Redesign af website: Vendeklinik" />
+                    </a>
+                <h4 class="margin-top"><a href="https://docs.google.com/document/d/11NZLz88OObpLorxqqhi5Eb6MfGbt_uM7M5eesXpRM1A/edit" target="_blank">Link til rapport >>></a></h4>
+            </div>
+        </div>
+        <!-- id=# ends-->
+        <footer class="footer">
+            <h4>MultimedieDesigner</h4>
+            <p>KEA - 2018<br> 1. Semester </p>
+        </footer>
+    </div>
+    <!-- wrapper ends-->
+    <!-- SCRIPTS-->
+    <!-- Core psw JS file -->
+    <script src="../js/pswp/photoswipe.min.js"></script>
+    <!-- UI psw JS file -->
+    <script src="../js/pswp/photoswipe-ui-default.min.js"></script>
+</body>
+<script src="../js/porfolio.js"></script>
+
+</html>
